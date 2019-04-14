@@ -1,0 +1,12 @@
+body {
+    background-image: url('../images/Image.jpg');
+    text-align: center;
+    
+
+}
+#button {
+    text-align: center;
+}
+.option{
+    margin: 15px;
+}
