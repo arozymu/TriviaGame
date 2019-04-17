@@ -1,9 +1,4 @@
 $(document).ready(function(){
-    $("#remaining-time").hide();
-    $("#start").on('click', trivia.startGame);
-    $(document).on('click' , '.option', trivia.guessChecker);
-    
-  })
   
   var trivia = {
     correct: 0,
@@ -34,7 +29,7 @@ $(document).ready(function(){
     },  
 
     startGame: function(){
-     
+     console.log("gamestart")
       trivia.currentSet = 0;
       trivia.correct = 0;
       trivia.incorrect = 0;
@@ -150,3 +145,8 @@ $(document).ready(function(){
     }
   
   }
+  $("#remaining-time").hide();
+    $("#Start").on('click', trivia.startGame);
+    $(document).on('click' , '.option', trivia.guessChecker);
+    
+})
